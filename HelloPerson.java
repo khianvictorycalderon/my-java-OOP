@@ -23,5 +23,9 @@ public class HelloPerson {
         // Displaying the output
         person1.displayInfo();
 
+        // Another object
+        Person person2 = new Person("Jake", 17);
+        person2.displayInfo();
+
     }
 }
