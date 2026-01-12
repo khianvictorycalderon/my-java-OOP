@@ -57,9 +57,14 @@ public class Encapsulation {
 
         
         // Person 2:
-        // This whill throw an error because age is minor
+        // This will throw an error because age is minor
         Person person2 = new Person("Jake", 15);
         System.out.println("Hello I am " + person2.getName() + ", and I am " + person2.getAge() + " years old.");
+
+        // Person 3:
+        // This will also throw an error because name is empty
+        Person person3 = new Person("", 21);
+        System.out.println("Hello I am " + person3.getName() + ", and I am " + person3.getAge() + " years old.");
 
     }
 }
