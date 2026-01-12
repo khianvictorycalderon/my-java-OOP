@@ -1,6 +1,6 @@
 class Person {
 
-    String age;
+    String name;
     int age;
 
     Person (String name, int age) {
