@@ -6,6 +6,13 @@ abstract class Animal {
     }
 }
 
+class Dog extends Animal {
+    @Override
+    void bark() {
+        System.out.println("Arrf Arrf!");
+    }
+}
+
 public class Abstraction {
     public static void main(String[] args) {
 
