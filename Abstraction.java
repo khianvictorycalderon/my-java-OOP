@@ -1,5 +1,5 @@
 abstract class Animal {
-    abstract void sound(); // Method must be implemented by subclass
+    abstract void bark(); // Method must be implemented by subclass
 
     void sleep() {
         System.out.println("Sleeping...");
