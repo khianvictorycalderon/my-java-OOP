@@ -38,5 +38,9 @@ public class Inheritance {
         Person person = new Person("John", 15);
         System.out.println("Hello I am " + person.name + " and I am " + person.age + " years old.");
 
+        // A teacher
+        Teacher teacher = new Teacher("Jake", 28, "Science");
+        System.out.println("Hi, I'm teacher " + teacher.name + ", and I am " + teacher.age + " years old, I teach " + teacher.subject + " subject.");
+
     }
 }
