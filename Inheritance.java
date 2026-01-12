@@ -30,3 +30,13 @@ class Janitor extends Person {
     }
 
 }
+
+public class Inheritance {
+    public static void main (String[] args) {
+
+        // A regular person
+        Person person = new Person("John", 15);
+        System.out.println("Hello I am " + person.name + " and I am " + person.age + " years old.");
+
+    }
+}
