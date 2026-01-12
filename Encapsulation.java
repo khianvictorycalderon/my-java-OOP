@@ -12,13 +12,13 @@ class Person {
     }
 
     public static void validateAge(int inputAge) {
-        if (age < 18) {
+        if (inputAge < 18) {
             throw new IllegalArgumentException("Age must not be a minor!");
         }
     }
 
     // Constructor with validation
-    Person(String name, int age) {
+    public Person(String name, int age) {
         validateName(name);
         validateAge(age);
         this.name = name;
@@ -26,24 +26,24 @@ class Person {
     }
 
     // Name getter function
-    public getName() {
+    public String getName() {
         return this.name;
     }
 
     // Name setter function
-    public setName(String newName) {
+    public void setName(String newName) {
         validateName(newName);
         this.name = newName;
     }
 
     // Age getter function
-    public getAge() {
+    public int getAge() {
         return this.age;
     }
 
     // Age setter function
-    public setAge(int newAge) {
-        validate(newAge);
+    public void setAge(int newAge) {
+        validateAge(newAge);
         this.age = newAge;
     }
 }
