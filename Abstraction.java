@@ -16,5 +16,9 @@ class Dog extends Animal {
 public class Abstraction {
     public static void main(String[] args) {
 
+        Dog blackie = new Dog();
+        blackie.bark();
+        blackie.sleep();
+
     }
 }
