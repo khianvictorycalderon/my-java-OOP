@@ -49,7 +49,17 @@ class Person {
 }
 
 public class Encapsulation {
-    public static void main (Stringp[] args) {
+    public static void main (String[] args) {
+
+        // Person 1:
+        Person person1 = new Person("Bob", 19);
+        System.out.println("Hello I am " + person1.getName() + ", and I am " + person1.getAge() + " years old.");
+
+        
+        // Person 2:
+        // This whill throw an error because age is minor
+        Person person2 = new Person("Jake", 15);
+        System.out.println("Hello I am " + person2.getName() + ", and I am " + person2.getAge() + " years old.");
 
     }
 }
